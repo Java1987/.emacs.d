@@ -18,4 +18,4 @@
 
 (require 'init-elpa)
 
-(require 'init-theme)
+(require 'init-themes)

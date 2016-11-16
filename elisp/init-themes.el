@@ -1,9 +1,9 @@
-(require-package 'color-theme-sanityinc-solarized)
-(require-package 'color-theme-sanityinc-tomorrow)
+;;(require-package 'color-theme-sanityinc-solarized)
+;;(require-package 'color-theme-sanityinc-tomorrow)
 (require-package 'monokai-theme)
-
+(require-package 'suscolors-theme)
 ;; If you don't customize it, this is the theme you get.
-(setq-default custom-enabled-themes '(monokai-theme))
+(setq-default custom-enabled-themes '(suscolors))
 
 ;; Ensure that themes will be applied even if they have not been customized
 (defun reapply-themes ()
@@ -19,17 +19,20 @@
 ;;------------------------------------------------------------------------------
 ;; Toggle between light and dark
 ;;------------------------------------------------------------------------------
-(defun light ()
-  "Activate a light color theme."
-  (interactive)
-  (color-theme-sanityinc-solarized-light))
+;; (defun light ()
+;;  "Activate a light color theme."
+;;  (interactive)
+;;  (color-theme-sanityinc-solarized-light))
 
-(defun dark ()
-  "Activate a dark color theme."
+;; (defun dark ()
+;;  "Activate a dark color theme."
+;;  (interactive)
+;;  (color-theme-sanityinc-solarized-dark))
+
+(defun monokai ()
+  "Activate monokai color theme"
   (interactive)
-  (color-theme-sanityinc-solarized-dark))
+  (color-theme-monokai))
+
 
 (provide 'init-themes)
-
-
-

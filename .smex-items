@@ -1,16 +1,17 @@
 
 ;; ----- smex-history -----
 (
+ company-next-page
+ package-list-packages
  cd
  5x5
  arp
  dbx
  dig
- erc
- ert
 )
 
 ;; ----- smex-data -----
 (
- 
+ (package-list-packages . 1)
+ (company-next-page . 1)
 )

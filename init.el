@@ -14,18 +14,19 @@
 ;; (setq inhibit-startup-message t)
 
 ;; require component
-(require 'init-el)
+(require 'init-utils) ;; base function
+(require 'init-elpa) ;; package manager
 
-(require 'init-elpa)
+(require 'init-chinese) ;; not useful
+(require 'init-themes) ;; config themes
+(require 'init-recentf) ;; config recentf.
 
-(require 'init-chinese)
+(require 'init-smex) ;; M-x tip
+(require 'init-ido) ;; C-x C-f tip
+;;(require 'init-ivy)
 
-(require 'init-themes)
-
-(require 'init-ido)
-
-(require 'init-smex)
-;; (require 'init-ivy)
+(require-package 'diminish) 
+(require 'init-company) ;; auto complete tools, depend init-company.
 
 ;; (custom-set-variables)
 (custom-set-variables

@@ -24,6 +24,7 @@
 
 (require 'init-ido)
 
+(require 'init-smex)
 ;; (require 'init-ivy)
 
 ;; (custom-set-variables)

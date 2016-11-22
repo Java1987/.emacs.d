@@ -15,15 +15,18 @@
 
 ;; require component
 (require 'init-utils) ;; base function
+
 (require 'init-elpa) ;; package manager
+
+;;(require 'init-xterm) ;; config 4 xterm
 
 (require 'init-chinese) ;; not useful
 (require 'init-themes) ;; config themes
-(require 'init-recentf) ;; config recentf.
 
-(require 'init-smex) ;; M-x tip
-(require 'init-ido) ;; C-x C-f tip
-;;(require 'init-ivy)
+(require 'init-recentf) ;; recent file.
+(require 'init-smex) ;; recent used M-x command.
+;;(require 'init-ido) ;; C-x C-f & M-x auto complete.
+(require 'init-ivy) ;; replace ido.
 
 (require-package 'diminish) 
 (require 'init-company) ;; auto complete tools, depend init-company.

@@ -1,17 +1,27 @@
 
 ;; ----- smex-history -----
 (
- company-next-page
- package-list-packages
- cd
- 5x5
- arp
- dbx
- dig
+ global-set-key
+ grep
+ grep-find
+ copy-file
+ delete-file
+ search-forward
+ goto-line
 )
 
 ;; ----- smex-data -----
 (
  (package-list-packages . 1)
  (company-next-page . 1)
+ (gdb . 1)
+ (shell-command . 1)
+ (line-number-mode . 2)
+ (goto-line . 1)
+ (search-forward . 2)
+ (delete-file . 1)
+ (copy-file . 1)
+ (grep-find . 1)
+ (grep . 3)
+ (global-set-key . 1)
 )

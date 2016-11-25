@@ -1,13 +1,13 @@
 
 ;; ----- smex-history -----
 (
+ eshell
  global-set-key
+ menu-bar-open
+ imenu-add-to-menubar
+ ada-find-file
  grep
  grep-find
- copy-file
- delete-file
- search-forward
- goto-line
 )
 
 ;; ----- smex-data -----
@@ -23,5 +23,9 @@
  (copy-file . 1)
  (grep-find . 1)
  (grep . 3)
- (global-set-key . 1)
+ (global-set-key . 2)
+ (ada-find-file . 1)
+ (imenu-add-to-menubar . 1)
+ (menu-bar-open . 2)
+ (eshell . 1)
 )

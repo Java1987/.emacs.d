@@ -1,0 +1,4 @@
+alias ll ls -al $*
+alias l ll $*
+alias g git $*
+alias gohome cd ~ $*

@@ -13,6 +13,8 @@
 ;; disable welcome page
 ;; (setq inhibit-startup-message t)
 
+;; (define-key key-translation-map [(control m)] [(control @)])
+
 ;; require component
 (require 'init-utils) ;; base function
 
@@ -24,7 +26,7 @@
 (require 'init-themes) ;; config themes
 
 (require 'init-recentf) ;; recent file.
-(require 'init-smex) ;; recent used M-x command.
+(require 'init-smex) ;; recent command.
 ;;(require 'init-ido) ;; C-x C-f & M-x auto complete.
 (require 'init-ivy) ;; replace ido.
 

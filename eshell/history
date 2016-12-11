@@ -7,3 +7,26 @@ ll
 ll
 ll
 ll
+l
+l
+..
+l
+rm *~
+l
+g status
+g add .
+g status
+g commit -m "add eshell alias"
+g log
+l
+cd eshell/
+l
+rm ll
+lll
+ll
+..
+l
+g remote -v
+g push origin master
+g ss
+g ss

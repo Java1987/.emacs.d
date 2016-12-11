@@ -9,18 +9,24 @@
 
 ;; def marco
 (defconst *is-a-mac* (eq system-type 'darwin))
+;; line number
+;; (global-linum-mode t) 
 
 ;; disable welcome page
-;; (setq inhibit-startup-message t)
+(setq inhibit-startup-message t)
 
-;; (define-key key-translation-map [(control m)] [(control @)])
+;; open up with full screen
+;; (setq initial-frame-alist (quote ((fullscreen . maximized))))
+
+;; map C-2 to C-@, not effects 
+;; (define-key key-translation-map [(control 2)] [(control @)])
 
 ;; require component
 (require 'init-utils) ;; base function
 
 (require 'init-elpa) ;; package manager
 
-;;(require 'init-xterm) ;; config 4 xterm
+;; (require 'init-xterm) ;; config 4 xterm
 
 (require 'init-chinese) ;; not useful
 (require 'init-themes) ;; config themes
@@ -31,9 +37,7 @@
 (require 'init-ivy) ;; replace ido.
 
 (require-package 'diminish) 
-(require 'init-company) ;; auto complete tools, depend init-company.
-
-;; (custom-set-variables)
+(require 'init-company) ;; auto complete tools, depend init-utils.
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -44,7 +48,7 @@
  '(custom-enabled-themes (quote (suscolors)))
  '(custom-safe-themes
    (quote
-    ("b9b1a8d2ec1d5c17700e1a09256f33c2520b26f49980ed9e217e444c381279a9" "a800120841da457aa2f86b98fb9fd8df8ba682cebde033d7dbf8077c1b7d677a" "4aee8551b53a43a883cb0b7f3255d6859d766b6c5e14bcb01bed572fcbef4328" default))))
+    ("b9b1a8d2ec1d5c17700e1a09256f33c2520b26f49980ed9e217e444c381279a9" default))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.

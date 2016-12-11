@@ -1,13 +1,13 @@
 
 ;; ----- smex-history -----
 (
+ cfs-increase-fontsize
+ cfs-ui
+ package-refresh-contents
+ toggle-frame-fullscreen
  eshell
  global-set-key
  menu-bar-open
- imenu-add-to-menubar
- ada-find-file
- grep
- grep-find
 )
 
 ;; ----- smex-data -----
@@ -27,5 +27,10 @@
  (ada-find-file . 1)
  (imenu-add-to-menubar . 1)
  (menu-bar-open . 2)
- (eshell . 1)
+ (eshell . 2)
+ (org-indent-mode . 1)
+ (toggle-frame-fullscreen . 2)
+ (package-refresh-contents . 2)
+ (cfs-ui . 1)
+ (cfs-increase-fontsize . 1)
 )

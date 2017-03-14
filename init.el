@@ -36,8 +36,9 @@
 ;;(require 'init-ido) ;; C-x C-f & M-x auto complete.
 (require 'init-ivy) ;; replace ido.
 
-(require-package 'diminish) 
+;;(require-package 'diminish) 
 (require 'init-company) ;; auto complete tools, depend init-utils.
+
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.

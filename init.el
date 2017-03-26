@@ -1,4 +1,4 @@
-
+n
 (let ((minver "23.3"))
   (when (version<= emacs-version minver)
     (error "Your Emacs is too old -- this config requires v%s or higher" minver)))
@@ -14,6 +14,7 @@
 
 ;; disable welcome page
 (setq inhibit-startup-message t)
+(setq default-tab-width 4)
 
 ;; open up with full screen
 ;; (setq initial-frame-alist (quote ((fullscreen . maximized))))

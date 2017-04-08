@@ -1,3 +1,10 @@
+
+;; Added by Package.el.  This must come before configurations of
+;; installed packages.  Don't delete this line.  If you don't want it,
+;; just comment it out by adding a semicolon to the start of the line.
+;; You may delete these explanatory comments.
+(package-initialize)
+
 (let ((minver "23.3"))
   (when (version<= emacs-version minver)
     (error "Your Emacs is too old -- this config requires v%s or higher" minver)))
@@ -22,12 +29,12 @@
 ;; (define-key key-translation-map [(control 2)] [(control @)])
 
 ;; require component
+(require 'init-electric) ;; pair mode
 (require 'init-utils) ;; base function
 
 (require 'init-elpa) ;; package manager
 
 ;; (require 'init-xterm) ;; config 4 xterm
-
 (require 'init-chinese) ;; not useful
 (require 'init-themes) ;; config themes
 

@@ -19,20 +19,14 @@
 ;;------------------------------------------------------------------------------
 ;; Toggle between light and dark
 ;;------------------------------------------------------------------------------
-;; (defun light ()
-;;  "Activate a light color theme."
-;;  (interactive)
-;;  (color-theme-sanityinc-solarized-light))
-
-;; (defun dark ()
-;;  "Activate a dark color theme."
-;;  (interactive)
-;;  (color-theme-sanityinc-solarized-dark))
-
-(defun monokai ()
-  "Activate monokai color theme"
+(defun light ()
+  "Activate a light color theme."
   (interactive)
-  (color-theme-monokai))
+  (color-theme-sanityinc-solarized-light))
 
+ (defun dark ()
+  "Activate a dark color theme."
+  (interactive)
+  (color-theme-sanityinc-solarized-dark))
 
 (provide 'init-themes)

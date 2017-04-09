@@ -29,6 +29,7 @@
 
 ;; require component
 (require 'init-electric) ;; pair mode
+(require 'init-kbs) ;; key bindings
 (require 'init-utils) ;; base function
 
 (require 'init-elpa) ;; package manager

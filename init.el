@@ -19,13 +19,11 @@
 
 ;; disable welcome page
 (setq inhibit-startup-message t)
+;; tab width
 (setq default-tab-width 4)
 
 ;; open up with full screen
-;; (setq initial-frame-alist (quote ((fullscreen . maximized))))
-
-;; map C-2 to C-@, not effects 
-;; (define-key key-translation-map [(control 2)] [(control @)])
+(setq initial-frame-alist (quote ((fullscreen . maximized))))
 
 ;; require component
 (require 'init-electric) ;; pair mode
@@ -46,6 +44,9 @@
 ;;(require-package 'diminish) 
 (require 'init-company) ;; auto complete tools, depend init-utils.
 
+;; org-mode
+(require 'init-org)
+
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -56,8 +57,8 @@
  '(ansi-color-names-vector
    (vector "#839496" "#dc322f" "#859900" "#b58900" "#268bd2" "#d33682" "#2aa198" "#eee8d5"))
  '(cfs--current-profile "profile1" t)
- '(cfs--profiles-steps (quote (("profile1" . 5))) t)
- '(custom-enabled-themes (quote (sanityinc-solarized-light)))
+ '(cfs--profiles-steps (quote (("profile1" . 6))) t)
+ '(custom-enabled-themes (quote (suscolors)))
  '(custom-safe-themes
    (quote
 	("a800120841da457aa2f86b98fb9fd8df8ba682cebde033d7dbf8077c1b7d677a" "4cf3221feff536e2b3385209e9b9dc4c2e0818a69a1cdb4b522756bcdf4e00a4" "4aee8551b53a43a883cb0b7f3255d6859d766b6c5e14bcb01bed572fcbef4328" "b9b1a8d2ec1d5c17700e1a09256f33c2520b26f49980ed9e217e444c381279a9" default)))

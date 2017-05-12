@@ -3,7 +3,7 @@
 (require-package 'monokai-theme)
 (require-package 'suscolors-theme)
 ;; If you don't customize it, this is the theme you get.
-(setq-default custom-enabled-themes '(suscolors))
+(setq-default custom-enabled-themes '(monokai suscolors))
 
 ;; Ensure that themes will be applied even if they have not been customized
 (defun reapply-themes ()

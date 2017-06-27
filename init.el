@@ -21,7 +21,7 @@
 (setq inhibit-startup-message t)
 ;; tab width
 (setq default-tab-width 4)
-(setq visible-bell t)
+;; (setq visible-bell t)
 (auto-image-file-mode)
 
 ;; open up with full screen

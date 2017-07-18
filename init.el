@@ -46,6 +46,8 @@
 ;;(require-package 'diminish) 
 (require 'init-company) ;; auto complete tools, depend init-utils.
 
+(require 'init-helm) ;; helm-gtags
+
 ;; org-mode
 (require 'init-org)
 
@@ -65,6 +67,12 @@
    (quote
 	("a800120841da457aa2f86b98fb9fd8df8ba682cebde033d7dbf8077c1b7d677a" "4cf3221feff536e2b3385209e9b9dc4c2e0818a69a1cdb4b522756bcdf4e00a4" "4aee8551b53a43a883cb0b7f3255d6859d766b6c5e14bcb01bed572fcbef4328" "b9b1a8d2ec1d5c17700e1a09256f33c2520b26f49980ed9e217e444c381279a9" default)))
  '(fci-rule-color "#073642")
+ '(helm-gtags-auto-update t)
+ '(helm-gtags-ignore-case t)
+ '(helm-gtags-path-style (quote relative))
+ '(package-selected-packages
+   (quote
+	(helm-gtags suscolors-theme smex monokai-theme idomenu ido-ubiquitous fullframe diminish counsel company-quickhelp color-theme-sanityinc-tomorrow color-theme-sanityinc-solarized chinese-fonts-setup)))
  '(vc-annotate-background nil)
  '(vc-annotate-color-map
    (quote

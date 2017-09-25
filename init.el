@@ -21,8 +21,12 @@
 (setq inhibit-startup-message t)
 ;; tab width
 (setq default-tab-width 4)
-;; (setq visible-bell t)
+(setq visible-bell t)
 (auto-image-file-mode)
+
+;; option key ?
+;; (setq mac-command-modifier 'meta)
+;; (setq mac-option-modifier 'super)
 
 ;; open up with full screen
 (setq initial-frame-alist (quote ((fullscreen . maximized))))
@@ -35,7 +39,7 @@
 (require 'init-elpa) ;; package manager
 
 ;; (require 'init-xterm) ;; config 4 xterm
-(require 'init-chinese) ;; not useful
+;; (require 'init-chinese) ;; not useful
 (require 'init-themes) ;; config themes
 
 (require 'init-recentf) ;; recent file.

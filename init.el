@@ -21,7 +21,11 @@
 (setq inhibit-startup-message t)
 ;; tab width
 (setq default-tab-width 4)
+;; bell
 (setq visible-bell t)
+;; .*~ files
+(setq make-backup-files nil)
+
 (auto-image-file-mode)
 
 ;; option key ?

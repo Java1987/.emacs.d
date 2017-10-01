@@ -14,6 +14,7 @@
 
 ;; def marco
 (defconst *is-a-mac* (eq system-type 'darwin))
+(defconst *is-gui* (display-graphic-p))
 ;; line number
 ;; (global-linum-mode t) 
 
@@ -22,15 +23,11 @@
 ;; tab width
 (setq default-tab-width 4)
 ;; bell
-(setq visible-bell t)
+;; (setq visible-bell t)
 ;; .*~ files
 (setq make-backup-files nil)
 
 (auto-image-file-mode)
-
-;; option key ?
-;; (setq mac-command-modifier 'meta)
-;; (setq mac-option-modifier 'super)
 
 ;; open up with full screen
 (setq initial-frame-alist (quote ((fullscreen . maximized))))
@@ -43,7 +40,8 @@
 (require 'init-elpa) ;; package manager
 
 ;; (require 'init-xterm) ;; config 4 xterm
-;; (require 'init-chinese) ;; not useful
+(if *is-gui* (require 'init-chinese))
+
 (require 'init-themes) ;; config themes
 
 (require 'init-recentf) ;; recent file.

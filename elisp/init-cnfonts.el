@@ -7,4 +7,4 @@
 ;; 让 spacemacs mode-line 中的 Unicode 图标正确显示。
 (cnfonts-set-spacemacs-fallback-fonts)
 
-(provide 'init-chinese)
+(provide 'init-cnfonts)

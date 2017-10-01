@@ -40,7 +40,7 @@
 (require 'init-elpa) ;; package manager
 
 ;; (require 'init-xterm) ;; config 4 xterm
-(if *is-gui* (require 'init-chinese))
+(if *is-gui* (require 'init-cnfonts))
 
 (require 'init-themes) ;; config themes
 

@@ -57,10 +57,14 @@
 ;;(require-package 'diminish) 
 (require 'init-company) ;; auto complete tools, depend init-utils.
 
-(require 'init-helm) ;; helm-gtags
+;; helm-gtags
+(require 'init-helm) 
 
 ;; org-mode
 (require 'init-org)
+
+;; neo tree
+(require 'init-neotree)
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
@@ -83,7 +87,7 @@
  '(helm-gtags-path-style (quote relative))
  '(package-selected-packages
    (quote
-	(helm-gtags suscolors-theme smex monokai-theme idomenu ido-ubiquitous fullframe diminish counsel company-quickhelp color-theme-sanityinc-tomorrow color-theme-sanityinc-solarized chinese-fonts-setup)))
+	(neotree org-plus-contrib helm-gtags suscolors-theme smex monokai-theme idomenu ido-ubiquitous fullframe diminish counsel company-quickhelp color-theme-sanityinc-tomorrow color-theme-sanityinc-solarized chinese-fonts-setup)))
  '(vc-annotate-background nil)
  '(vc-annotate-color-map
    (quote

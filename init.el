@@ -11,6 +11,8 @@
   (message "Your Emacs is old, and some functionality in this config will be disabled. Please upgrade if possible."))
 
 (add-to-list 'load-path (expand-file-name "elisp" user-emacs-directory))
+(setenv "PATH" (concat (getenv "PATH") ":/usr/local/bin"))
+(setq exec-path (append exec-path '("/usr/local/bin")))
 
 ;; def marco
 (defconst *is-a-mac* (eq system-type 'darwin))
@@ -20,17 +22,20 @@
 
 ;; disable welcome page
 (setq inhibit-startup-message t)
+
 ;; tab width
 (setq default-tab-width 4)
+
 ;; bell
 ;; (setq visible-bell t)
+
 ;; .*~ files
 (setq make-backup-files nil)
 
 (auto-image-file-mode)
-
+    
 ;; open up with full screen
-(setq initial-frame-alist (quote ((fullscreen . maximized))))
+;; (setq initial-frame-alist (quote ((fullscreen . maximized))))
 
 ;; require component
 (require 'init-electric) ;; pair mode

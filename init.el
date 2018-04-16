@@ -4,11 +4,6 @@
 ;; You may delete these explanatory comments.
 ;; (package-initialize)
 
-(let ((minver "23.3"))
-  (when (version<= emacs-version minver)
-    (error "Your Emacs is too old -- this config requires v%s or higher" minver)))
-(when (version<= emacs-version "24")
-  (message "Your Emacs is old, and some functionality in this config will be disabled. Please upgrade if possible."))
 
 (add-to-list 'load-path (expand-file-name "elisp" user-emacs-directory))
 (setenv "PATH" (concat (getenv "PATH") ":/usr/local/bin"))
@@ -17,6 +12,7 @@
 ;; def marco
 (defconst *is-a-mac* (eq system-type 'darwin))
 (defconst *is-gui* (display-graphic-p))
+
 ;; line number
 ;; (global-linum-mode t) 
 ;; disable welcome page
@@ -39,31 +35,35 @@
 (global-hl-line-mode 1)
 
 ;; require component
-(require 'init-electric) ;; pair mode
-(require 'init-kbs) ;; key bindings
-(require 'init-utils) ;; base function
-
-(require 'init-elpa) ;; package manager
-
-;; (require 'init-xterm) ;; config 4 xterm
-(if *is-gui* (require 'init-cnfonts))
-
-(require 'init-themes) ;; config themes
-
-(require 'init-recentf) ;; recent file.
-(require 'init-smex) ;; recent command.
-;;(require 'init-ido) ;; C-x C-f & M-x auto complete.
-(require 'init-ivy) ;; replace ido.
-
-;;(require-package 'diminish) 
-(require 'init-company) ;; auto complete tools, depend init-utils.
-
+;; pair mode
+(require 'init-electric) 
+;; key bindings
+(require 'init-kbs)
+;; base function
+(require 'init-utils) 
+;; package manager
+(require 'init-elpa) 
+;; config 4 xterm
+;; (require 'init-xterm) 
+(if *is-gui*
+	(require 'init-cnfonts))
+;; configration themes
+(require 'init-themes) 
+;; recent file.
+(require 'init-recentf)
+;; recent command.
+(require 'init-smex)
+;; C-x C-f & M-x auto complete.
+;;(require 'init-ido)
+;; replace ido.
+(require 'init-ivy) 
+;; (require-package 'diminish)
+;; auto complete tools, depend init-utils.
+(require 'init-company) 
 ;; helm-gtags
 (require 'init-helm) 
-
 ;; org-mode
 (require 'init-org)
-
 ;; neo tree
 (require 'init-neotree)
 

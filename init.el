@@ -19,23 +19,24 @@
 (defconst *is-gui* (display-graphic-p))
 ;; line number
 ;; (global-linum-mode t) 
-
 ;; disable welcome page
 (setq inhibit-startup-message t)
-
 ;; tab width
 (setq default-tab-width 4)
-
 ;; bell
 ;; (setq visible-bell t)
-
 ;; .*~ files
 (setq make-backup-files nil)
-
+;; nothing
 (auto-image-file-mode)
-    
+;; hide toolbar
+(tool-bar-mode 0)
+;; hide menubar
+(menu-bar-mode 0)
 ;; open up with full screen
 ;; (setq initial-frame-alist (quote ((fullscreen . maximized))))
+;; hilight current line
+(global-hl-line-mode 1)
 
 ;; require component
 (require 'init-electric) ;; pair mode
@@ -77,10 +78,10 @@
    (vector "#839496" "#dc322f" "#859900" "#b58900" "#268bd2" "#d33682" "#2aa198" "#eee8d5"))
  '(cfs--current-profile "profile1" t)
  '(cfs--profiles-steps (quote (("profile1" . 6))) t)
- '(custom-enabled-themes (quote (suscolors)))
+ '(custom-enabled-themes (quote (sanityinc-solarized-dark)))
  '(custom-safe-themes
    (quote
-	("a800120841da457aa2f86b98fb9fd8df8ba682cebde033d7dbf8077c1b7d677a" "4cf3221feff536e2b3385209e9b9dc4c2e0818a69a1cdb4b522756bcdf4e00a4" "4aee8551b53a43a883cb0b7f3255d6859d766b6c5e14bcb01bed572fcbef4328" "b9b1a8d2ec1d5c17700e1a09256f33c2520b26f49980ed9e217e444c381279a9" default)))
+	("4aee8551b53a43a883cb0b7f3255d6859d766b6c5e14bcb01bed572fcbef4328" "4cf3221feff536e2b3385209e9b9dc4c2e0818a69a1cdb4b522756bcdf4e00a4" "a8245b7cc985a0610d71f9852e9f2767ad1b852c2bdea6f4aadc12cce9c4d6d0" "e11569fd7e31321a33358ee4b232c2d3cf05caccd90f896e1df6cab228191109" "9a155066ec746201156bb39f7518c1828a73d67742e11271e4f24b7b178c4710" "ff7625ad8aa2615eae96d6b4469fcc7d3d20b2e1ebc63b761a349bebbb9d23cb" default)))
  '(fci-rule-color "#073642")
  '(helm-gtags-auto-update t)
  '(helm-gtags-ignore-case t)

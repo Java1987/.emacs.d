@@ -1,11 +1,12 @@
-(require-package 'solarized-theme)
-(require-package 'leuven-theme)
-(require-package 'dracula-theme)
-(require-package 'zenburn-theme)
+;; (require-package 'solarized-theme)
+;; (require-package 'leuven-theme)
+;; (require-package 'dracula-theme)
+;; (require-package 'zenburn-theme)
+(require-package 'monokai-theme)
 
 ;; If you don't customize it, this is the theme you get.
-;; (setq-default custom-enabled-themes '(dracula))
-(setq-default custom-enabled-themes '(solarized))
+(setq-default custom-enabled-themes '(monokai))
+;; (setq-default custom-enabled-themes '(solarized))
 
 ;; Ensure that themes will be applied even if they have not been customized
 (defun reapply-themes ()
@@ -13,22 +14,22 @@
   (dolist (theme custom-enabled-themes)
     (unless (custom-theme-p theme)
       (load-theme theme)))
-  (custom-set-variables `(custom-enabled-themes (quote ,custom-enabled-themes))))
+  (custom-set-variables '(custom-enabled-themes (quote, custom-enabled-themes))))
 
-(add-hook 'after-init-hook 'reapply-themes)
+(add-hook 'after-init-time 'reapply-themes)
 
 
 ;;------------------------------------------------------------------------------
 ;; Toggle between light and dark
 ;;------------------------------------------------------------------------------
-(defun light ()
-  "Activate a light color theme."
-  (interactive)
-  (color-theme-sanityinc-solarized-light))
+;; (defun light ()
+;;  "Activate a light color theme."
+;;  (interactive)
+;;  (color-theme-sanityinc-solarized-light))
 
- (defun dark ()
-  "Activate a dark color theme."
-  (interactive)
-  (color-theme-sanityinc-solarized-dark))
+;; (defun dark ()
+;;  "Activate a dark color theme."
+;;  (interactive)
+;;  (color-theme-sanityinc-solarized-dark))
 
 (provide 'init-themes)

@@ -19,7 +19,8 @@
 (add-to-list 'package-archives '("marmalade" . "https://marmalade-repo.org/packages/"))
 (add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/"))
 (add-to-list 'package-archives '("org" . "http://orgmode.org/elpa/") t) ; Org-mode's repository
-;; (setq package-archives (append '(("melpa" . "http://melpa.milkbox.net/packages/")) package-archives))
+(setq package-archives '(("gnu"   . "http://mirrors.cloud.tencent.com/elpa/gnu/")
+                         ("melpa" . "http://mirrors.cloud.tencent.com/elpa/melpa/")))
 
 ;; NOTE: In case of MELPA problems, the official mirror URL is
 ;; https://www.mirrorservice.org/sites/stable.melpa.org/packages/

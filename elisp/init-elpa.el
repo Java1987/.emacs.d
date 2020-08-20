@@ -19,9 +19,16 @@
 ;; (add-to-list 'package-archives '("marmalade" . "https://marmalade-repo.org/packages/"))
 ;; (add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/"))
 ;; (add-to-list 'package-archives '("org" . "http://orgmode.org/elpa/") t) ; Org-mode's repository
-(setq package-archives '(("gnu"   . "http://mirrors.cloud.tencent.com/elpa/gnu/")
-                         ("melpa" . "http://mirrors.cloud.tencent.com/elpa/melpa/")))
-
+;; (setq package-archives '(("gnu"   . "http://mirrors.cloud.tencent.com/elpa/gnu/")
+;;                          ("melpa" . "http://mirrors.cloud.tencent.com/elpa/melpa/")))
+;; (setq package-archives '(("gnu"   . "http://mirrors.tuna.tsinghua.edu.cn/elpa/gnu/")
+;;                          ("melpa" . "http://mirrors.tuna.tsinghua.edu.cn/elpa/melpa/")))
+;; (setq package-archives '(("gnu" . "https://mirrors.ustc.edu.cn/elpa/gnu/")
+;;                          ("melpa" . "https://mirrors.ustc.edu.cn/elpa/melpa/")
+;;                          ("melpa-stable" . "https://mirrors.ustc.edu.cn/elpa/melpa-stable/")
+;;                          ("org" . "https://mirrors.ustc.edu.cn/elpa/org/")))
+ (setq package-archives '(("gnu"   . "http://elpa.emacs-china.org/gnu/")
+                           ("melpa" . "http://elpa.emacs-china.org/melpa/")))
 ;; NOTE: In case of MELPA problems, the official mirror URL is
 ;; https://www.mirrorservice.org/sites/stable.melpa.org/packages/
 

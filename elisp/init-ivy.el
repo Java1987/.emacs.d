@@ -13,7 +13,7 @@
     (when (maybe-require-package 'diminish)
       (diminish 'ivy-mode)))
 
-  (defun sanityinc/enable-ivy-flx-matching ()
+  (defun shiwei/enable-ivy-flx-matching ()
     "Make `ivy' matching work more like IDO."
     (interactive)
     (require-package 'flx)
@@ -39,7 +39,5 @@
 ;;(when (maybe-require-package 'swiper)
 ;;  (after-load 'ivy
 ;;    (define-key ivy-mode-map (kbd "C-s") 'swiper)))
-
-
 
 (provide 'init-ivy)
